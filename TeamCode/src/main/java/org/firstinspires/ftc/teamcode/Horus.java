@@ -198,7 +198,7 @@ public class Horus extends LinearOpMode {
             }
             if (gamepad2.left_bumper)
             {
-                robot.Conveyor.setPosition(0.7);
+                robot.Conveyor.setPower(1);
             }
 
         }

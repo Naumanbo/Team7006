@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode;
 
+import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
@@ -38,7 +39,7 @@ public class HardwareHorus
     public Servo    plateRight  =null;
     public Servo    plateLeft   =null;
     public Servo    AutoHook    =null;
-    public Servo    Conveyor    =null;
+    public CRServo  Conveyor    =null;
 
     public static final double ARM_UP_POWER    = -0.75 ;
     public static final double ARM_DOWN_POWER  =  0.75 ;
@@ -83,7 +84,7 @@ public class HardwareHorus
         plateRight  =hwMap.get(Servo.class, "plateRight");
         plateLeft   =hwMap.get(Servo.class, "plateLeft");
         AutoHook    =hwMap.get(Servo.class, "AutoHook");
-        Conveyor    =hwMap.get(Servo.class, "Conveyor");
+        Conveyor    =hwMap.get(CRServo.class, "Conveyor");
 
     }
 
