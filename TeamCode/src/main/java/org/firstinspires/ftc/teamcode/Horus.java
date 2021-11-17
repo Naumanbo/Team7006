@@ -177,11 +177,11 @@ public class Horus extends LinearOpMode {
             }
 
             //Releasing Plate
-            if (gamepad1.left_bumper)
-            {
-                robot.plateLeft.setPosition(0.6);
-                robot.plateRight.setPosition(0.5);
-            }
+          //  if (gamepad1.left_bumper)
+           // {
+           //     robot.plateLeft.setPosition(0.6);
+            //    robot.plateRight.setPosition(0.5);
+         //   }
 
             //***Autonomous Hook (For Emergency)***
 
@@ -195,6 +195,10 @@ public class Horus extends LinearOpMode {
             if (gamepad1.x)
             {
                 robot.AutoHook.setPosition(0.5);
+            }
+            if (gamepad2.left_bumper)
+            {
+                robot.Conveyor.setPosition(0.7);
             }
 
         }

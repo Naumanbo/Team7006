@@ -38,6 +38,7 @@ public class HardwareHorus
     public Servo    plateRight  =null;
     public Servo    plateLeft   =null;
     public Servo    AutoHook    =null;
+    public Servo    Conveyor    =null;
 
     public static final double ARM_UP_POWER    = -0.75 ;
     public static final double ARM_DOWN_POWER  =  0.75 ;
@@ -82,6 +83,7 @@ public class HardwareHorus
         plateRight  =hwMap.get(Servo.class, "plateRight");
         plateLeft   =hwMap.get(Servo.class, "plateLeft");
         AutoHook    =hwMap.get(Servo.class, "AutoHook");
+        Conveyor    =hwMap.get(Servo.class, "Conveyor");
 
     }
 
@@ -138,6 +140,7 @@ public class HardwareHorus
     public void ReleasePlate(){
 
     }
+
 
 }
 
